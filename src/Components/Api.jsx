@@ -1,4 +1,5 @@
-function Data(props){
+import React from "react"
+function Api(props){
     console.log("Data Component",Object.keys(props.data[0]))
     return(
         <>
@@ -28,3 +29,4 @@ function Data(props){
         </>
     );
 }
+export default Api;
