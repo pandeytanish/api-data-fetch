@@ -2,7 +2,6 @@ import './App.css';
 import React, { useState,useEffect } from 'react';
 import Api from './Components/Api';
 
-
 function App() {
   const [url,setUrl]=useState()
   const [data,setData]=useState()
@@ -10,7 +9,7 @@ function App() {
     fetch(url)
     .then(response => response.json())
     .then(json => setData(json))
-  },[data]
+  },[url]
   )
   return (
     <>
