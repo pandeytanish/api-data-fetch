@@ -3,6 +3,7 @@ function Api(props) {
     console.log("Data Component", Object.keys(props.data[0]))
     return (
         <>
+        <h1>press button to fetch data</h1>
             <table className="table">
                 <thead>
                     <tr>
