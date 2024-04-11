@@ -1,7 +1,9 @@
 import './App.css';
-import React, { useState,useEffect } from 'react';
-import Api from './Components/Api';
-import ApiNew from './Components/ApiNew';
+import  {Routes , Route} from 'react-router-dom'
+import Datamovie from './Components/Url/Home'
+import DataMoveRou from './Components/Url/Redirect'
+
+
 
 
 function App() {
@@ -14,15 +16,14 @@ function App() {
   //   .then(json => setData(json))
   // },[url]
   
-  return (
-    <>
-    {/* <button onClick={()=>setUrl('https://jsonplaceholder.typicode.com/users')}>Show Users</button>
-    <button onClick={()=>setUrl('https://jsonplaceholder.typicode.com/posts')}>Show posts</button>
-    {data && <Api data={data}/>} */}
-   <ApiNew/>
-    
-    </>
-  );
+  return  (
+<>
+ <Routes>
+ <Route path="/" element={<Datamovie/>} />
+<Route path="data/:id" element={<DataMoveRou/>}/>
+ </Routes>
+</>
+    )
 }
 
 export default App;
