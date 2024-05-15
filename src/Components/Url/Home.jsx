@@ -15,7 +15,6 @@ function Home() {
                 console.log("Error fetching data", error);
             });
     }, []);
-
     return (
         <>
             <div>
