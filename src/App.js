@@ -2,6 +2,7 @@ import './App.css';
 import  {Routes , Route} from 'react-router-dom'
 import Datamovie from './Components/Url/Home'
 import DataMoveRou from './Components/Url/Redirect'
+import ApiDataSend from './ApiDataSend';
 
 
 
@@ -18,10 +19,11 @@ function App() {
   
   return  (
 <>
- <Routes>
+<ApiDataSend/>
+ {/* <Routes>
  <Route path="/" element={<Datamovie/>} />
 <Route path="data/:id" element={<DataMoveRou/>}/>
- </Routes>
+ </Routes> */}
 </>
     )
 }
